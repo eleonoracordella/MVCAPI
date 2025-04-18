@@ -27,5 +27,5 @@ namespace MVCAPI.Controllers
             return studenti;
         }
 
-    }1
+    }
 }

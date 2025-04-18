@@ -28,4 +28,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+//dico al builder "da qualunque origine arrivi, tu bypassa tutto ed esegui"!
+//accetta ogni metodo e ogni origine
+
+app.UseCors(builder =>
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyOrigin()
+    );
+
 app.Run();
